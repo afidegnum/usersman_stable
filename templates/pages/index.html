@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}Index{% endblock %}
+
+{% block topcontent %}
+
+<ul>
+    {%for content in contents%}
+    <li>{{content.title }}  | {{content.summary}} </li>
+
+
+    {%endfor%}
+</ul>
+

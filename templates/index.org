@@ -1,0 +1,11 @@
+* Page Layouts
+** Top Headers
+*** Logo
+*** Slogan
+*** Menu
+**** Home
+**** About-Us
+*** Login/Register | If login > display form below header : Else display Registration form inside Middle.
+** Middle
+*** content (for the mean time)
+** Footer

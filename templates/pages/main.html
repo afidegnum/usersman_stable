@@ -1,0 +1,17 @@
+{% include "layout.html" %}
+
+<p><a href="{{ url }}">Home</a></p>
+<p><a href="{{ welcome }}">Home</a></p>
+
+<ul>
+    {% for menu in menus %}
+    <li>{{ menu.name|e }}</li>
+    {% endfor %}
+</ul>
+
+<ul>
+    {% for item in contents %}
+    <li>{{ item.title|e }}</li>
+    {% endfor %}
+</ul>
+

@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+<ul>
+    {% for menu in top.menus %}
+    <li>{{ menu.name|e }}</li>
+    <p><a href="{{ menu.title|e }}">{{ menu.name|e }}</a></p>
+    {% endfor %}
+</ul>
+
+
+<ul>
+    {%for content in top.contents%}
+    <li>{{content.title }}  | {{content.summary}} </li>
+
+
+    {%endfor%}
+</ul>
+
+{% endblock %}

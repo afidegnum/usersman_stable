@@ -1,0 +1,78 @@
+[package]
+name = "app"
+version = "0.1.0"
+authors = ["afidegnum <afidegnum@yahoo.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+base64 = "0.13.0"
+actix-rt = "1.0.0"
+actix-web = "3.1.0"
+#actix-web = { version = "2.0.0", features = ["openssl"] }
+actix-cors = "0.5.0"
+actix-session = "0.3.0"
+actix-multipart = "0.3.0"
+actix-files = "0.4.0"
+actix-identity = "0.3.1"
+openssl = { version = "0.10", features = ["v110"] }
+lazy_static = "1.4.0"
+config = "0.10.1"
+deadpool-postgres = "0.5.0"
+derive_more = "0.99.2"
+dotenv = "0.15.0"
+serde = { version = "1.0.104", features = ["derive"] }
+#tokio = { version = "0.2.11", features = ["signal"] }
+tokio = { version = "0.3", features = ["full"] }
+tokio-pg-mapper = "0.1.8"
+tokio-pg-mapper-derive = "0.1.5"
+# tokio-postgres = "0.5.1"
+tokio-postgres = { version = "0.5", features = ["with-chrono-0_4", "with-uuid-0_8"] }
+log = "0.4.0"
+env_logger = "0.7.1"
+serde_json = "1.0.46"
+jsonwebtoken = "7.2.0"
+openid = "0.6.0"
+smallvec = "1.4.2"
+rand = "0.7"
+arc-swap = "0.4.7"
+crossbeam = "0.8.0"
+dirs = "3.0.1"
+#rust-argon2 = "0.5"
+chrono = { version = "0.4", features = ["serde"] }
+postgres_query = "0.3.3"
+postgres_query_macro = "0.3.1"
+proc-macro-hack = "0.5.11"
+postgres-types = "0.1.2"
+futures = "0.3.1"
+async-trait = "0.1.22"
+url = "2.1.1"
+#thiserror = "1.0.9"
+#anyhow = "1.0"
+structopt = "0.3.14"
+serde_derive = "1.0.106"
+askama = "0.10.3"
+im = "15.0.0"
+#lettre = "0.9.3"
+lettre = "0.10.0-alpha.3"
+uuid = { version = "0.8", features = ["serde", "v4"] }
+#yarte = { version = "*", features = ["with-actix-web"]  }
+argonautica = "0.2.0"
+sanitize-filename = "0.2.1"
+v_htmlescape = "~0.4.5"
+#pretty_assertions = "0.6.1"
+listenfd = "0.3"
+
+[build-dependencies]
+askama = "0.10.5"
+#yarte = { version = "*", features = ["with-actix-web"]  }
+
+[dev-dependencies]
+bytes = "0.5.3"
+#tokio = { version = "0.2.6", features = ["macros"] }
+structopt = "0.3.7"
+#anyhow = "1.0.26"
+askama = "0.10.3"
+pretty_assertions = "0.6.1"
+#yarte = { version = "*", features = ["with-actix-web"]  }
